@@ -1,5 +1,3 @@
-
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import scenarios from "../data/scenarios.json";
 
@@ -14,21 +12,36 @@ const languageMap = {
   Bangla: "bn-IN",
 };
 
-function startRecording(setText, langCode) {
+let recognition;
+
+function startRecording(setTranscript, langCode, setIsRecording) {
   if (!("webkitSpeechRecognition" in window)) {
     alert("Speech recognition not supported in this browser. Please use Chrome.");
     return;
   }
-  const recognition = new window.webkitSpeechRecognition();
+  recognition = new window.webkitSpeechRecognition();
   recognition.lang = langCode;
-  recognition.interimResults = false;
-  recognition.maxAlternatives = 1;
+  recognition.interimResults = true;
+  recognition.continuous = true;
 
   recognition.onresult = (event) => {
-    const transcript = event.results[0][0].transcript;
-    setText(transcript);
+    let finalTranscript = "";
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      finalTranscript += event.results[i][0].transcript;
+    }
+    setTranscript(finalTranscript);
   };
+
   recognition.start();
+  setIsRecording(true);
+}
+
+function stopRecording(setAgentResponse, transcript, setIsRecording) {
+  if (recognition) {
+    recognition.stop();
+    setIsRecording(false);
+    setAgentResponse(transcript);
+  }
 }
 
 function speakText(text, langCode) {
@@ -45,6 +58,8 @@ export default function PracticeMode() {
   const [language, setLanguage] = useState("English");
   const [current, setCurrent] = useState(0);
   const [agentResponse, setAgentResponse] = useState("");
+  const [transcript, setTranscript] = useState("");
+  const [isRecording, setIsRecording] = useState(false);
   const [feedback, setFeedback] = useState("");
 
   const practiceSet = scenarios.slice(0, 10);
@@ -94,6 +109,29 @@ export default function PracticeMode() {
           placeholder="Type your response here..."
         />
 
+        <div className="flex space-x-4 mb-4">
+          <button
+            onClick={() => startRecording(setTranscript, languageMap[language], setIsRecording)}
+            disabled={isRecording}
+            className="flex-1 bg-white border border-purple-600 text-purple-600 py-2 rounded-lg shadow hover:bg-purple-50 transition disabled:opacity-50"
+          >
+            🎙️ Start Recording
+          </button>
+          <button
+            onClick={() => stopRecording(setAgentResponse, transcript, setIsRecording)}
+            disabled={!isRecording}
+            className="flex-1 bg-red-500 text-white py-2 rounded-lg shadow hover:bg-red-600 transition disabled:opacity-50"
+          >
+            ⏹️ Stop Recording
+          </button>
+        </div>
+
+        {transcript && (
+          <div className="mb-4 p-3 bg-purple-50 border border-purple-200 rounded">
+            <p className="text-sm text-gray-700"><strong>Transcript:</strong> {transcript}</p>
+          </div>
+        )}
+
         <div className="flex space-x-4 mb-6">
           <button
             onClick={handleSubmit}
@@ -105,6 +143,7 @@ export default function PracticeMode() {
             onClick={() => {
               setCurrent((c) => (c + 1) % practiceSet.length);
               setAgentResponse("");
+              setTranscript("");
               setFeedback("");
             }}
             className="flex-1 bg-white border border-purple-600 text-purple-600 py-3 rounded-lg shadow hover:bg-purple-50 transition"
@@ -113,35 +152,20 @@ export default function PracticeMode() {
           </button>
         </div>
 
-        <button
-          onClick={() => startRecording(setAgentResponse, languageMap[language])}
-          className="w-full mb-6 bg-white border border-purple-600 text-purple-600 py-2 rounded-lg shadow hover:bg-purple-50 transition"
-        >
-          🎤 Record My Response
-        </button>
-
         {feedback && (
           <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-            <h3 className="font-semibold text-purple-800 mb-2">AI Feedback</h3>
-            <p className="text-gray-800 mb-2">{feedback}</p>
+            <h3 className="font-semibold text-purple-800 mb-2">Agent Response</h3>
+            <p className="text-gray-700">{agentResponse}</p>
+            <h3 className="font-semibold text-purple-800 mt-4 mb-2">AI Feedback</h3>
+            <p className="text-gray-800">{feedback}</p>
             <button
               onClick={() => speakText(feedback, languageMap[language])}
-              className="bg-purple-600 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-700 transition"
+              className="mt-2 bg-purple-600 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-700"
             >
               🔊 Replay
             </button>
           </div>
         )}
-
-      <div className="mt-6">
-        <Link
-          to="/"
-          className="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg shadow hover:bg-gray-300 transition"
-        >
-          ⬅ Back to Home
-        </Link>
-      </div>
-
       </div>
     </div>
   );
