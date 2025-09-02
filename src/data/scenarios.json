@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "category": "Pricing & Commission",
+    "objection": "Your commission is too high.",
+    "suggested": "Reframe as an investment, not a cost. Show value vs. price."
+  },
+  {
+    "id": 2,
+    "category": "Pricing & Commission",
+    "objection": "Bahut mehenga hai, itna budget nahi hai mera.",
+    "suggested": "Offer a trial period, a smaller starter package, or break down the cost."
+  },
+  {
+    "id": 3,
+    "category": "Pricing & Commission",
+    "objection": "Is there any discount? Can you give me a better price?",
+    "suggested": "Explain the value included. Hold firm but offer a non-monetary value-add."
+  },
+  {
+    "id": 4,
+    "category": "Pricing & Commission",
+    "objection": "The other company is offering a 5% lower commission.",
+    "suggested": "Differentiate on features, service, and reliability. 'Cheaper isn't always better.'"
+  },
+  {
+    "id": 5,
+    "category": "Pricing & Commission",
+    "objection": "Are there any hidden charges I should know about?",
+    "suggested": "Be upfront. Show a clear pricing table. Highlight what's included."
+  },
+  {
+    "id": 6,
+    "category": "Pricing & Commission",
+    "objection": "Itna paisa lagane ke baad, sales nahi badhi toh?",
+    "suggested": "Share case studies, testimonials, or offer a performance-based incentive."
+  },
+  {
+    "id": 7,
+    "category": "Pricing & Commission",
+    "objection": "GST include karke final price batao.",
+    "suggested": "Provide a clear, final quote immediately to demonstrate transparency."
+  },
+  {
+    "id": 8,
+    "category": "Pricing & Commission",
+    "objection": "Payment terms flexible hain? Can I pay in installments?",
+    "suggested": "Explain the available payment plans. Show empathy for their cash flow needs."
+  },
+  {
+    "id": 9,
+    "category": "Competition & Loyalty",
+    "objection": "I'm already working with [Competitor Name] and I'm happy.",
+    "suggested": "Acknowledge and respect the relationship. Ask 'What if we could improve X by 10%?'"
+  },
+  {
+    "id": 10,
+    "category": "Competition & Loyalty",
+    "objection": "Mera purana vendor hai, usse aacha relation hai.",
+    "suggested": "Don't attack the relationship. Suggest a small, parallel trial."
+  },
+  {
+    "id": 11,
+    "category": "Competition & Loyalty",
+    "objection": "Everyone in the market uses their platform, why should I use yours?",
+    "suggested": "Focus on your USP. Highlight niche, service, or specific feature."
+  },
+  {
+    "id": 12,
+    "category": "Competition & Loyalty",
+    "objection": "I tried a similar service before and it didn't work for me.",
+    "suggested": "Differentiate clearly. Show how you're different and avoid past problems."
+  },
+  {
+    "id": 13,
+    "category": "Competition & Loyalty",
+    "objection": "Suna hai [Competitor Name] ka customer support bahut accha hai.",
+    "suggested": "Showcase your support strength. Provide testimonials or SLAs."
+  },
+  {
+    "id": 14,
+    "category": "Competition & Loyalty",
+    "objection": "Just leave your brochure, I'll compare and get back to you.",
+    "suggested": "Secure a follow-up meeting. Suggest a specific time."
+  },
+  {
+    "id": 15,
+    "category": "Competition & Loyalty",
+    "objection": "They are a big, well-known brand. Are you new?",
+    "suggested": "Highlight agility, modern tech, personalized service."
+  },
+  {
+    "id": 16,
+    "category": "Trust & Reliability",
+    "objection": "How can I trust that your system won't fail during peak hours?",
+    "suggested": "Discuss uptime stats, infrastructure, and SLAs."
+  },
+  {
+    "id": 17,
+    "category": "Trust & Reliability",
+    "objection": "Aapki company kab tak tikegi? What if you shut down?",
+    "suggested": "Talk about funding, vision, and team experience."
+  },
+  {
+    "id": 18,
+    "category": "Trust & Reliability",
+    "objection": "I need to see a live demo with my own products.",
+    "suggested": "Be prepared to offer a customized or sandboxed demo."
+  },
+  {
+    "id": 19,
+    "category": "Trust & Reliability",
+    "objection": "Do you have any clients in my area? Can I speak to them?",
+    "suggested": "Provide references of happy, local clients."
+  },
+  {
+    "id": 20,
+    "category": "Trust & Reliability",
+    "objection": "Your marketing promises sound too good to be true.",
+    "suggested": "Back up every claim with data or case studies."
+  },
+  {
+    "id": 21,
+    "category": "Trust & Reliability",
+    "objection": "Mera data safe rahega? What about data security?",
+    "suggested": "Explain security protocols, encryption, and privacy policies."
+  },
+  {
+    "id": 22,
+    "category": "Trust & Reliability",
+    "objection": "Pehle bhi log aaye the, promise karke service nahi di.",
+    "suggested": "Acknowledge frustration. Differentiate with clear onboarding and support."
+  },
+  {
+    "id": 23,
+    "category": "Value & ROI",
+    "objection": "I don't think I'll get enough return on this investment.",
+    "suggested": "Use an ROI calculator. Show conservative projections."
+  },
+  {
+    "id": 24,
+    "category": "Value & ROI",
+    "objection": "My business is very small, I don't need all these features.",
+    "suggested": "Focus on 1-2 key features with biggest impact."
+  },
+  {
+    "id": 25,
+    "category": "Value & ROI",
+    "objection": "Isse mera fayda kya hoga, seedhe seedhe batao.",
+    "suggested": "Give a clear 'what's in it for you' statement."
+  },
+  {
+    "id": 26,
+    "category": "Value & ROI",
+    "objection": "We are doing fine without it, why do we need this?",
+    "suggested": "Introduce opportunity cost. 'You're doing well, but could be great.'"
+  },
+  {
+    "id": 27,
+    "category": "Value & ROI",
+    "objection": "This seems like a 'nice to have', not a 'must have'.",
+    "suggested": "Connect product to core business goals."
+  },
+  {
+    "id": 28,
+    "category": "Value & ROI",
+    "objection": "Free mein jo mil raha hai, uske liye main pay kyun karoon?",
+    "suggested": "Explain limitations of free tools vs. premium benefits."
+  },
+  {
+    "id": 29,
+    "category": "Value & ROI",
+    "objection": "How long will it take to see results?",
+    "suggested": "Provide a typical timeline (30-60 days)."
+  },
+  {
+    "id": 30,
+    "category": "Procrastination & Time",
+    "objection": "I don't have time for this right now.",
+    "suggested": "Respect their time. Suggest a short follow-up."
+  },
+  {
+    "id": 31,
+    "category": "Procrastination & Time",
+    "objection": "Send me an email with the details.",
+    "suggested": "Send and book a follow-up slot."
+  },
+  {
+    "id": 32,
+    "category": "Procrastination & Time",
+    "objection": "I need to discuss this with my partner/manager.",
+    "suggested": "Offer a summary sheet for discussion."
+  },
+  {
+    "id": 33,
+    "category": "Procrastination & Time",
+    "objection": "Abhi season ka time hai, baad mein dekhte hain.",
+    "suggested": "Frame it as a way to manage peak season better."
+  },
+  {
+    "id": 34,
+    "category": "Procrastination & Time",
+    "objection": "Call me back next quarter.",
+    "suggested": "Create urgency with limited-time offer."
+  },
+  {
+    "id": 35,
+    "category": "Procrastination & Time",
+    "objection": "We are planning a renovation, so we'll decide after that.",
+    "suggested": "Acknowledge, ask to follow up on specific date."
+  },
+  {
+    "id": 36,
+    "category": "Procrastination & Time",
+    "objection": "Let me think about it.",
+    "suggested": "Uncover real objection (price or implementation)."
+  },
+  {
+    "id": 37,
+    "category": "Technical & Implementation",
+    "objection": "This seems too complicated. My staff won't be able to use it.",
+    "suggested": "Emphasize ease of use. Offer free training."
+  },
+  {
+    "id": 38,
+    "category": "Technical & Implementation",
+    "objection": "Mere paas iske liye proper computer/internet nahi hai.",
+    "suggested": "Clarify requirements. Suggest lightweight/mobile-first."
+  },
+  {
+    "id": 39,
+    "category": "Technical & Implementation",
+    "objection": "How long will the setup and installation take?",
+    "suggested": "Provide clear step-by-step timeline."
+  },
+  {
+    "id": 40,
+    "category": "Technical & Implementation",
+    "objection": "Will this integrate with my existing billing software?",
+    "suggested": "Be honest about integrations. Mention APIs."
+  },
+  {
+    "id": 41,
+    "category": "Technical & Implementation",
+    "objection": "After-sales service kon dega?",
+    "suggested": "Explain support channels, hours, and response times."
+  },
+  {
+    "id": 42,
+    "category": "Technical & Implementation",
+    "objection": "Mujhe technology samajh nahi aati.",
+    "suggested": "Reassure them. 'We handle tech, you focus on business.'"
+  },
+  {
+    "id": 43,
+    "category": "Technical & Implementation",
+    "objection": "Yeh mobile pe aache se chalega?",
+    "suggested": "Showcase mobile support. Confirm full functionality."
+  },
+  {
+    "id": 44,
+    "category": "Technical & Implementation",
+    "objection": "Software update ka kya? Will there be extra charges?",
+    "suggested": "Clarify updates are included."
+  },
+  {
+    "id": 45,
+    "category": "Need & Relevance",
+    "objection": "My business is different, this won't work for me.",
+    "suggested": "Use niche case studies to prove relevance."
+  },
+  {
+    "id": 46,
+    "category": "Need & Relevance",
+    "objection": "Mere customers online nahi hain.",
+    "suggested": "Share local internet stats. Highlight efficiency gains."
+  },
+  {
+    "id": 47,
+    "category": "Need & Relevance",
+    "objection": "I don't have a problem with my current process.",
+    "suggested": "Ask discovery questions to uncover pain points."
+  },
+  {
+    "id": 48,
+    "category": "Need & Relevance",
+    "objection": "This is only for big restaurants/shops, not for my small cafe.",
+    "suggested": "Highlight SMB-specific features and pricing."
+  },
+  {
+    "id": 49,
+    "category": "Need & Relevance",
+    "objection": "We get most of our business from word-of-mouth.",
+    "suggested": "Frame tool as amplification of word-of-mouth."
+  },
+  {
+    "id": 50,
+    "category": "Need & Relevance",
+    "objection": "Is this just another app that I have to manage?",
+    "suggested": "Position as consolidation tool, reducing other apps."
+  },
+  {
+    "id": 51,
+    "category": "Need & Relevance",
+    "objection": "Mera walk-in customer base aacha hai, I don't need more.",
+    "suggested": "Talk about future-proofing and resilience."
+  },
+  {
+    "id": 52,
+    "category": "Need & Relevance",
+    "objection": "What is the point of this? Main jaise kar raha hoon theek hai.",
+    "suggested": "Use simple analogy to explain problem solved."
+  },
+  {
+    "id": 53,
+    "category": "Miscellaneous",
+    "objection": "The decision is up to my son, he handles all the tech.",
+    "suggested": "Offer joint meeting with son/decision-maker."
+  },
+  {
+    "id": 54,
+    "category": "Miscellaneous",
+    "objection": "I'll do it, but only if you give me exclusivity in my area.",
+    "suggested": "Explain why exclusivity isn't possible, offer partnership."
+  },
+  {
+    "id": 55,
+    "category": "Miscellaneous",
+    "objection": "I read a bad review about your company online.",
+    "suggested": "Acknowledge, explain improvements since then."
+  },
+  {
+    "id": 56,
+    "category": "Miscellaneous",
+    "objection": "Your salesperson last year promised me something you didn't deliver.",
+    "suggested": "Apologize sincerely. Rebuild trust with changes made."
+  },
+  {
+    "id": 57,
+    "category": "Miscellaneous",
+    "objection": "Sab kuch theek hai, par I need it in Gujarati/Kannada/Tamil.",
+    "suggested": "Be clear about current language support and roadmap."
+  },
+  {
+    "id": 58,
+    "category": "Miscellaneous",
+    "objection": "The contract is too long, I don't want to be locked in.",
+    "suggested": "Offer shorter-term plan even at higher price."
+  },
+  {
+    "id": 59,
+    "category": "Miscellaneous",
+    "objection": "Okay, let's start with a free trial.",
+    "suggested": "Agree if available, or explain alternative demo."
+  },
+  {
+    "id": 60,
+    "category": "Miscellaneous",
+    "objection": "The person who came before you was very pushy.",
+    "suggested": "Set collaborative tone. Emphasize no-pressure approach."
+  }
+]
